@@ -164,6 +164,59 @@ ontology-risk-platform/
 
 ## Research Background
 
-This application extends an academic project investigating ontology-grounded language-model approaches to risk identification in autonomous-driving corner-case scenarios.
+This platform extends an academic research project investigating
+**ontology-grounded LLM risk discovery for autonomous-driving corner cases**.
 
-The objective is to explore how domain-specific semantic knowledge can support structured, interpretable risk descriptions.
+The research explores whether domain-specific semantic knowledge can guide
+multimodal language models toward more structured and grounded risk
+identification in complex driving scenarios.
+
+### Research Pipeline
+
+The experimental pipeline consists of:
+
+1. Autonomous-driving scenario images
+2. Image batching and preprocessing
+3. Multimodal LLM scene interpretation
+4. Ontology-guided prompting
+5. Entity and relationship identification
+6. RDF/Turtle generation
+7. RDFLib-based parsing
+8. Structured risk and severity extraction
+9. Experimental evaluation
+
+### Ontology-Guided Risk Analysis
+
+The autonomous-driving ontology represents concepts including:
+
+- Scenes and driving environments
+- Vehicles, pedestrians, and other actors
+- Road objects and obstacles
+- Traffic signs and signals
+- Weather conditions
+- Evidence indicators
+- Corner-case anomalies
+- Driving risks
+
+Three primary anomaly categories are represented:
+
+- **State Anomaly** — unusual states or configurations in a driving scene
+- **Behavior Anomaly** — unexpected behavior from actors in the environment
+- **Evidence-Based Anomaly** — observable evidence indicating a potential hazard
+
+The ontology is supplied as semantic context to the LLM, encouraging the
+model to use domain-specific concepts and relationships when interpreting
+a scene and generating risks.
+
+### Structured Semantic Output
+
+Instead of returning only natural-language predictions, the research
+pipeline generates RDF/Turtle representations of detected entities,
+relationships, and risks.
+
+Example:
+
+```turtle
+:Risk_1 a :PedestrianCollisionRisk ;
+    :hasDescription "A pedestrian may enter the vehicle path." ;
+    :hasSeverityScore "0.82"^^xsd:float .
