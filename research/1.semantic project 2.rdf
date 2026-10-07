@@ -1,0 +1,915 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4/"
+     xml:base="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasActor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Actor"/>
+        <rdfs:comment>Links a scene to the actors present in it.</rdfs:comment>
+        <rdfs:label>has actor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasCornerCaseType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasCornerCaseType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CornerCase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CornerCase"/>
+        <rdfs:comment>Specifies the type of anomaly associated with a corner case.</rdfs:comment>
+        <rdfs:label>has corner case type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasEvidence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasEvidence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CornerCase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EvidenceIndicator"/>
+        <rdfs:comment>Links a corner case to observable evidence indicating potential risks.</rdfs:comment>
+        <rdfs:label>has evidence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasObstacle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasObstacle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Obstacle"/>
+        <rdfs:comment>Links a scene to obstacles present in it.</rdfs:comment>
+        <rdfs:label>has obstacle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasPedestrian -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasPedestrian">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Pedestrian"/>
+        <rdfs:comment>Links a scene to pedestrians present in it.</rdfs:comment>
+        <rdfs:label>has pedestrian</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasRisk -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasRisk">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CornerCase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk"/>
+        <rdfs:comment>Links a corner case scenario to the risks identified in it.</rdfs:comment>
+        <rdfs:label>has risk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasRoadObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasRoadObject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RoadObject"/>
+        <rdfs:comment>Links a scene to road objects present in it.</rdfs:comment>
+        <rdfs:label>has road object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasSceneType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasSceneType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+        <rdfs:comment>Describes the type of environment where the scene takes place.</rdfs:comment>
+        <rdfs:label>has scene type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasVehicle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasVehicle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Vehicle"/>
+        <rdfs:comment>Links a scene to vehicles present in it.</rdfs:comment>
+        <rdfs:label>has vehicle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasWeatherCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasWeatherCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#WeatherCondition"/>
+        <rdfs:comment>Describes the environmental weather conditions affecting the scene.</rdfs:comment>
+        <rdfs:label>has weather condition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#indicatesPotentialRisk -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#indicatesPotentialRisk">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EvidenceIndicator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk"/>
+        <rdfs:comment>Links evidence indicators to the risks they suggest.</rdfs:comment>
+        <rdfs:label>indicates potential risk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#occursInScene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#occursInScene">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CornerCase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+        <rdfs:comment>Specifies the scene in which a corner case occurs.</rdfs:comment>
+        <rdfs:label>occurs in scene</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CornerCase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Provides a textual description of a scenario or identified risk.</rdfs:comment>
+        <rdfs:label>has description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasScenarioName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasScenarioName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CornerCase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the name or identifier of the corner case scenario</rdfs:comment>
+        <rdfs:label>has scenario name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasSeverityScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#hasSeverityScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has severity score</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Actor">
+        <rdfs:comment>A dynamic entity in the scene such as a vehicle or pedestrian.</rdfs:comment>
+        <rdfs:label>Actor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Advertisement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Advertisement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RoadObject"/>
+        <rdfs:comment>A visual display such as a billboard that may distract or be misinterpreted as a traffic sign.</rdfs:comment>
+        <rdfs:label>Advertisement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Ambulance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Ambulance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EmergencyVehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#AnimalNearRoadIndicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#AnimalNearRoadIndicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EvidenceIndicator"/>
+        <rdfs:comment>Presence of animals near the road indicating unpredictable movement and potential collision risk.</rdfs:comment>
+        <rdfs:label>Animal Near Road Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Barrel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Barrel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Obstacle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#BehaviorAnomaly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#BehaviorAnomaly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CornerCase"/>
+        <rdfs:comment>A situation where an actor behaves in an unexpected or unsafe way.</rdfs:comment>
+        <rdfs:label>Behavior Anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#BrokenLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#BrokenLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#LaneMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Car">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ClearCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ClearCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#WeatherCondition"/>
+        <rdfs:comment>Weather condition with clear visibility and no significant environmental disturbances.</rdfs:comment>
+        <rdfs:label>Clear Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CollisionRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CollisionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk"/>
+        <rdfs:comment>Risk of a collision between the vehicle and another object or actor.</rdfs:comment>
+        <rdfs:label>Collision Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ConstructionBarricade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ConstructionBarricade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Obstacle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ConstructionWorker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ConstructionWorker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Pedestrian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ConstructionZoneIndicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ConstructionZoneIndicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EvidenceIndicator"/>
+        <rdfs:comment>Presence of construction activity indicating potential hazards such as workers or blocked lanes.</rdfs:comment>
+        <rdfs:label>Construction Zone Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CornerCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CornerCase">
+        <rdfs:comment>A rare or unusual driving scenario that may pose safety risks.</rdfs:comment>
+        <rdfs:label>Corner Case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Crosswalk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Crosswalk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#LaneMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Cyclist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Cyclist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Pedestrian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#DayCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#DayCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#WeatherCondition"/>
+        <rdfs:comment>Driving conditions during daylight with generally good visibility.</rdfs:comment>
+        <rdfs:label>Day Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#DigitalAd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#DigitalAd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Advertisement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Dog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Dog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Obstacle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#DoubleLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#DoubleLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#LaneMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EmergencyVehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EmergencyVehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EvidenceBasedAnomaly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EvidenceBasedAnomaly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CornerCase"/>
+        <rdfs:comment>A scenario where observable evidence indicates a potential future risk.</rdfs:comment>
+        <rdfs:label>Evidence-Based Anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EvidenceIndicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EvidenceIndicator">
+        <rdfs:comment>A signal or clue that suggests a potential upcoming risk.</rdfs:comment>
+        <rdfs:label>Evidence Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Excavator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Excavator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#FallenTree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#FallenTree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Obstacle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#FallingObjectIndicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#FallingObjectIndicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EvidenceIndicator"/>
+        <rdfs:comment>Evidence of an object falling or likely to fall into the road, posing a hazard.</rdfs:comment>
+        <rdfs:label>Falling Object Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#FireTruck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#FireTruck">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EmergencyVehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#FoggyCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#FoggyCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#WeatherCondition"/>
+        <rdfs:comment>Weather condition with fog that significantly reduces visibility.</rdfs:comment>
+        <rdfs:label>Foggy Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#FootBall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#FootBall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Obstacle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#GreenLight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#GreenLight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficSignal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#HayBale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#HayBale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Obstacle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Highway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Highway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+        <rdfs:comment>A high-speed road designed for long-distance travel with controlled access.</rdfs:comment>
+        <rdfs:label>Highway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Intersection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Intersection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+        <rdfs:comment>A location where two or more roads meet, often involving complex traffic interactions.</rdfs:comment>
+        <rdfs:label>Intersection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Kids -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Kids">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Pedestrian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#LaneIntrusionRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#LaneIntrusionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk"/>
+        <rdfs:comment>Risk caused by a vehicle entering or occupying an incorrect lane, potentially leading to unsafe interactions.</rdfs:comment>
+        <rdfs:label>Lane Intrusion Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#LaneMarking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#LaneMarking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RoadObject"/>
+        <rdfs:comment>Road markings that define lane boundaries and guide vehicle positioning.</rdfs:comment>
+        <rdfs:label>Lane Marking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#LowFrictionRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#LowFrictionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk"/>
+        <rdfs:label>Low Friction Risk</rdfs:label>
+        <rdfs:label>Risk due to reduced tire grip on the road surface, often caused by rain, ice, or debris.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Motorcycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Motorcycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#NightCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#NightCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#WeatherCondition"/>
+        <rdfs:comment>Driving conditions at night with reduced visibility due to low lighting.</rdfs:comment>
+        <rdfs:label>Night Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Noovertakingsign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Noovertakingsign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Obstacle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Obstacle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RoadObject"/>
+        <rdfs:comment>A physical object present on the road that may obstruct the vehicle’s path.</rdfs:comment>
+        <rdfs:label>Obstacle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ObstructionRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ObstructionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk"/>
+        <rdfs:comment>Risk caused by objects blocking or partially blocking the roadway.</rdfs:comment>
+        <rdfs:label>Obstruction Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#OccludedPedestrianIndicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#OccludedPedestrianIndicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EvidenceIndicator"/>
+        <rdfs:comment>Presence of a pedestrian hidden behind an object, indicating a potential sudden appearance.</rdfs:comment>
+        <rdfs:label>Occluded Pedestrian Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#OccludingObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#OccludingObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RoadObject"/>
+        <rdfs:comment>An object that blocks or partially obstructs the view of important elements in the scene.</rdfs:comment>
+        <rdfs:label>Occluding Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#OcclusionRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#OcclusionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk"/>
+        <rdfs:comment>Risk caused by objects blocking visibility of important elements in the scene.</rdfs:comment>
+        <rdfs:label>Occlusion Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ParkedVehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ParkedVehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#OccludingObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Pedestrian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Pedestrian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#PedestrianCollisionRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#PedestrianCollisionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk"/>
+        <rdfs:comment>Risk of the vehicle colliding with a pedestrian in the scene.</rdfs:comment>
+        <rdfs:label>Pedestrian Collision Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#PoliceCar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#PoliceCar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EmergencyVehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RainyCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RainyCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#WeatherCondition"/>
+        <rdfs:comment>Weather condition with rain that reduces visibility and road traction.</rdfs:comment>
+        <rdfs:label>Rainy Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RedLight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RedLight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficSignal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ReducedVisibilityRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ReducedVisibilityRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk"/>
+        <rdfs:comment>Risk due to poor visibility conditions such as fog, rain, or low lighting.</rdfs:comment>
+        <rdfs:label>Reduced Visibility Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ResidentialArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ResidentialArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk">
+        <rdfs:comment>A potential hazard that may lead to unsafe situations.</rdfs:comment>
+        <rdfs:label>Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RoadObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RoadObject">
+        <rdfs:comment>An object present in the driving environment.</rdfs:comment>
+        <rdfs:label>Road Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RollingBallIndicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RollingBallIndicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#EvidenceIndicator"/>
+        <rdfs:comment>Presence of a rolling ball indicating a possible child or pedestrian entering the road.</rdfs:comment>
+        <rdfs:label>Rolling Ball Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene">
+        <rdfs:comment>The type of driving environment where the scenario occurs.</rdfs:comment>
+        <rdfs:label>Scene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#SolidLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#SolidLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#LaneMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#SpeedLimitSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#SpeedLimitSign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#StateAnomaly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#StateAnomaly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#CornerCase"/>
+        <rdfs:comment>A mismatch between the appearance of an object and its expected meaning.</rdfs:comment>
+        <rdfs:comment>State Anomaly</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#StaticAd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#StaticAd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Advertisement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#StopLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#StopLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#LaneMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#StopSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#StopSign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#SuddenOstacleRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#SuddenOstacleRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk"/>
+        <rdfs:comment>Risk of encountering an unexpected obstacle appearing suddenly in the vehicle’s path.</rdfs:comment>
+        <rdfs:label>Sudden Obstacle Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficCone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficCone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Obstacle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficSign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RoadObject"/>
+        <rdfs:comment>A road sign that provides regulatory, warning, or informational instructions to drivers.</rdfs:comment>
+        <rdfs:label>Traffic Sign</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficSignal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficSignal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#RoadObject"/>
+        <rdfs:comment>A signaling device that controls traffic flow using lights such as red, yellow, and green.</rdfs:comment>
+        <rdfs:label>Traffic Signal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficViolationRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficViolationRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk"/>
+        <rdfs:comment>Risk of violating traffic rules or signals, such as running a red light or driving in the wrong lane.</rdfs:comment>
+        <rdfs:label>Traffic Violation Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Truck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Truck">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Tunnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Tunnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#UnpredictableBehaviorRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#UnpredictableBehaviorRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Risk"/>
+        <rdfs:comment>Risk arising from actors exhibiting sudden or unexpected actions that are difficult to anticipate.</rdfs:comment>
+        <rdfs:label>Unpredictable Behavior Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#UrbanRoad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#UrbanRoad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Scene"/>
+        <rdfs:comment>A road located within a city or town with frequent traffic, pedestrians, and signals.</rdfs:comment>
+        <rdfs:label>Urban Road</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Van -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Van">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#VendingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#VendingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Obstacle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#WeatherCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#WeatherCondition">
+        <rdfs:comment>Environmental conditions such as fog, rain, or night affecting visibility and driving.</rdfs:comment>
+        <rdfs:label>Weather Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#YellowLight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#YellowLight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#TrafficSignal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ZooAnimal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#ZooAnimal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jayaa/ontologies/2026/3/untitled-ontology-4#Obstacle"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
